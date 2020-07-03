@@ -1,0 +1,269 @@
+* {
+    list-style: none;
+    box-sizing: 0;
+    padding: 0;
+    margin: 0;
+    font-family: 'aldrich';
+}
+
+body {
+    background: #e4e4e4fa;
+}
+
+.menu-icon-close {
+    display: none;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    padding: 0.7rem;
+    background-color: rgba(219, 218, 218, 0.9);
+    z-index: 20;
+}
+
+.menu-icon-open,
+.menu-icon-close {
+    font-size: 1.5rem;
+}
+
+.menu h1 {
+    font-size: 2.5rem;
+    margin: auto;
+}
+
+.menu ul {
+    margin: auto;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    font-size: bold;
+}
+
+.menu li:hover {
+    cursor: pointer;
+    border-bottom: 1.4px solid rgba(65, 242, 86);
+}
+
+.foto-01 {
+    position: relative;
+    height: 80vh;
+    background: linear-gradient(135deg, rgba(33, 204, 119, 0.4) 0%, rgba(65, 242, 86, 0.5) 100%), url("./fotos/foto-01.jpg") no-repeat center center/cover;
+    position: block;
+    width: 100%;
+}
+
+.space {
+    margin: 0 2rem;
+    margin-top: 0.1rem;
+}
+
+.part-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.space h1 {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: 'aldrich';
+}
+
+.space p {
+    text-align: center;
+    margin-bottom: 3.4rem;
+    font-family: 'aldrich';
+}
+
+.modalidade {
+    margin-top: 1rem;
+    margin-bottom: 7rem;
+    width: 20rem;
+    height: 25rem;
+    display: flex;
+    border-radius: 0.2rem;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    color: white;
+    box-shadow: 0.1rem 0.2rem 1rem black;
+}
+
+.modalidade::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(135deg, rgba(33, 204, 119, 0.8) 0%, rgba(65, 242, 86, 0.9) 100%);
+    border-radius: 0.2rem;
+    z-index: -2;
+}
+
+.icone {
+    margin-top: 3rem;
+    font-size: 3.5rem;
+    margin-bottom: 0.6rem;
+    z-index: 0;
+}
+
+.modalidade h2 {
+    display: inline-block;
+    margin-bottom: 1.4rem;
+}
+
+.modalidade p {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    display: inline-block;
+    margin: 0 1rem;
+    z-index: 0;
+}
+
+.camping {
+    background: url("./fotos/modalidade-backgrond-camping.jpg") no-repeat center center/cover;
+    object-position: center;
+    z-index: -1;
+}
+
+.hiking {
+    background: url("./fotos/modalidade-backgrond-hiking.jpg") no-repeat center center/cover;
+    object-position: center;
+    z-index: -1;
+}
+
+.climbing {
+    background: url("./fotos/modalidade-backgrond-climbing.jpg") no-repeat center center/cover;
+    object-position: center;
+    z-index: -1;
+}
+
+.part-2 {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    box-shadow: -0.1rem -0.2rem 1rem black;
+}
+
+.conteudo {
+    margin: 2rem;
+    width: 50%;
+    text-align: center;
+    line-height: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.part-2::before,
+.part-3::before {
+    position: absolute;
+    content: '';
+    top: 10;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(135deg, rgba(33, 204, 119, 0.8) 0%, rgba(65, 242, 86, 0.9) 100%), url('./fotos/stars.jpg');
+    z-index: -1;
+}
+
+.conteudo h1 {
+    margin: 1rem 0 2rem;
+    font-weight: bold;
+}
+
+.conteudo p {
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 3rem auto auto auto;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.foto-02 {
+    height: 60vh;
+    width: 50%;
+    background: url("./fotos/foto-02.jpg") no-repeat center center/cover;
+    object-position: center;
+}
+
+.part-3 {
+    display: flex;
+    height: 60vh;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    position: relative;
+    box-shadow: -0.1rem -0.2rem 1rem black;
+}
+
+.foto-03 {
+    height: 60vh;
+    width: 50%;
+    background: url("./fotos/foto-03.jpg") no-repeat center center/cover;
+    object-position: center;
+}
+
+.foto-04 {
+    height: 60vh;
+    width: 50%;
+    background: url("./fotos/foto-04.jpg") no-repeat center center/cover;
+}
+
+.testemunho {
+    margin-top: 5rem;
+    display: flex;
+    height: 10vh;
+}
+
+.testemunho-person {
+    background: url("./fotos/testemunho-person-01.jpg") no-repeat center center/cover;
+    border-radius: 50%;
+    width: 10rem;
+}
+
+@media (max-width:720px) {
+    .menu {
+        flex-direction: column;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .part-2,
+    .part-3 {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+    .conteudo {
+        width: 100%;
+        margin-left: 0;
+    }
+    .foto-02,
+    .foto-03,
+    .foto-04 {
+        width: 100%;
+    }
+    .space {
+        margin: 0;
+    }
+}
